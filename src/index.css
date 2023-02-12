@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .storegg-container {
+    @apply w-[75vw] xl:w-[85vw] m-auto;
+  }
+  .scroll-hidden::-webkit-scrollbar {
+    display: none !important;
+  }
+  body::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(66, 245, 141) rgb(66, 245, 141);
+  }
+  body::-webkit-scrollbar {
+    @apply w-1.5;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-gradient-to-b from-slate-100 to-gray-100;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-[#46760A];
+  }
+}
